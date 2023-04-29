@@ -155,7 +155,7 @@ namespace audio_play
         gst_buffer_unref(buffer);
       }
 
-     static void cb_newpad (GstElement *decodebin, GstPad *pad, 
+     static void cb_newpad (GstElement*, GstPad *pad, 
                              gpointer data)
       {
         AudioPlayNode *client = reinterpret_cast<AudioPlayNode*>(data);
