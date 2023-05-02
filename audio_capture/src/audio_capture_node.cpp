@@ -227,7 +227,7 @@ namespace audio_capture
         return GST_FLOW_OK;
       }
 
-      static gboolean onMessage (GstBus *bus, GstMessage *message, gpointer userData)
+      static gboolean onMessage (GstBus*, GstMessage *message, gpointer userData)
       {
         AudioCaptureNode *server = reinterpret_cast<AudioCaptureNode*>(userData);
         GError *err;
